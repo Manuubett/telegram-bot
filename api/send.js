@@ -1,8 +1,8 @@
 const { sendMessage } = require('../lib/telegram');
 
 module.exports = async (req, res) => {
-  // Set CORS headers
-  res.setHeader('Access-Control-Allow-Origin', '*'); // For testing; restrict to your domain later
+  // Set CORS headers explicitly for your domain
+  res.setHeader('Access-Control-Allow-Origin', 'https://bett.website');
   res.setHeader('Access-Control-Allow-Methods', 'POST, OPTIONS');
   res.setHeader('Access-Control-Allow-Headers', 'Content-Type, x-api-key');
 
